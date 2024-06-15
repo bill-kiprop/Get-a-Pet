@@ -15,6 +15,7 @@ const route = createBrowserRouter([
 {
     path:"/petdetails",
     element: <Petdetails/>
-}
+},
+
 ])
 export default route

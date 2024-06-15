@@ -14,9 +14,7 @@ function Nbar() {
                <button> Home</button>
             </NavLink>
           </Nav>
-          <Nav>
-            
-          </Nav>
+         
         </Container>
       </Navbar>
     </>
