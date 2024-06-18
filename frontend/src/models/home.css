@@ -1,0 +1,96 @@
+.home {
+  background-color: rgb(226, 175, 128);
+}
+
+.header1 {
+  font-size: 90px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  color: #5D4037;
+}
+
+.paragraph1 {
+  text-align: left;
+  color: #3E2723;
+  font-size: 50px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:  #E6BEA0;
+  padding: 50px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.intro-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.text-wrapper {
+  flex: 2;
+  margin-right: 20px;
+}
+
+.carousel-container {
+  flex: 1;
+}
+
+.carousel-container img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 2px solid #8B9A46;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button-primary,
+.button-secondary {
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.button-primary {
+  background-color:#8B9A46;
+  color: #fff;
+}
+
+.button-secondary {
+  background-color:  #5D4037;
+  color: #333;
+}
+
+.button-primary:hover,
+.button-secondary:hover {
+  opacity: 0.8;
+  background-color: rgb(52, 47, 47);
+}
+
+.full-text {
+  width: 100%;
+  text-align: left;
+  margin-top: 100px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

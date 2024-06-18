@@ -1,23 +1,40 @@
 import React from 'react'
-import { Container, Nav,Navbar } from 'react-bootstrap'
-import { NavLink } from 'react-router-dom'
+import { Container, Nav,Navbar, Row,Col } from 'react-bootstrap'
+import { NavLink, useNavigate } from 'react-router-dom'
 import './Navbar.css'
 
+
 function Nbar() {
+  const previousPage = useNavigate()
   return (
-    <>
-     <Navbar data-bs-theme="dark" className='navbar'>
+    
+     <div className='navbar1'>
         <Container>
-          <Navbar.Brand href="#home">GET A PET</Navbar.Brand>
-          <Nav className="me-auto">
+        <Row>
+          
+        <Col xs={8}>
+        <Navbar.Brand >
+            <h2 className='title'>GET A PET</h2>
+          </Navbar.Brand>
+        </Col>
+        <Col >
+          <Nav>
             <NavLink to ={"/"}>
-               <button> Home</button>
-            </NavLink>
-          </Nav>
+               <button className='button-primary'> HOME</button>
+               </NavLink>
+               <NavLink to={'/users'}>
+               <button className='button-primary'>PROFILES</button>
+               </NavLink>
+               
+               
+              
+          </Nav></Col>
+      </Row>
+          
          
         </Container>
-      </Navbar>
-    </>
+        </div>
+    
   )
 }
 

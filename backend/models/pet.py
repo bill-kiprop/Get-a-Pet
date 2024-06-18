@@ -45,8 +45,12 @@ class Pets:
         return [
             cls.row_to_instance(row)for row in rows
         ]
-
     
+    @classmethod
+    def find_by_id(cls, pet_id):
+        sql = f"SELECT * FROM {cls.TABLE_NAME} WHERE id = ?"
+        row = cursor.execute(sql, (pet_id,)).fetchone()
+        return cls.row_to_instance(row)
 
  
 
