@@ -87,8 +87,8 @@ class User:
         conn.commit()
         print('users table created')
 
-User.create_table()  
-# User.drop_table()  
+# User.create_table()  
+# # User.drop_table()  
 
 # users_data = [
 #     ('John Doe', 1234567890, '123 Main St', 'A brief bio of John', 'https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671116.jpg?size=338&ext=jpg&ga=GA1.1.1141335507.1718582400&semt=ais_user'),

@@ -55,5 +55,5 @@ class Adopt_applctn:
         cursor.execute(f"DROP TABLE IF EXISTS {cls.TABLE_NAME} ")
         conn.commit()
 
-Adopt_applctn.drop_table()
-# Adopt_applctn.create_table()
+# Adopt_applctn.drop_table()
+Adopt_applctn.create_table()

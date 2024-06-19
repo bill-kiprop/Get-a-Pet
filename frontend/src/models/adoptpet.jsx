@@ -106,7 +106,7 @@ function AdoptPet() {
   return (
     <>
      {submitted && (
-        <Alert variant="success" onClose={() => setSubmitted(false)} dismissible style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 1050, padding: '30px' }}>
+        <Alert variant="success" onClose={() => setSubmitted(false)} dismissible style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 1050 }}>
           Your application has been submitted and will be reviewed. You will be contacted within 1-2 weeks.
         </Alert>
       )}
